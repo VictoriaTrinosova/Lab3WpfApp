@@ -18,30 +18,30 @@
                     <TextBlock Text="Times New Roman"/>
                     <TextBlock Text="Verdana"/>
                 </ComboBox>
-                <ComboBox x:Name="textBox1" Margin="5" Padding="5" SelectedIndex="2" Width="50" SelectionChanged="ComboBox_SelectionChanged_1">
+                <ComboBox Margin="5" Padding="5" SelectedIndex="2" Width="50" SelectionChanged="ComboBox_SelectionChanged_1">
                     <TextBlock Text="12"/>
                     <TextBlock Text="14"/>
                     <TextBlock Text="16"/>
                 </ComboBox>
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
-                <Button>
+                <Button Click="Button_Click_1" >
                     <Image Source="Data/1 (1).png"/>
                 </Button>
                 <Separator/>
-                <Button>
+                <Button Click="Button_Click_2">
                     <Image Source="Data/1 (2).png"/>
                 </Button>
                 <Separator/>
-                <Button>
+                <Button Click="Button_Click">
                     <Image Source="Data/1 (3).png"/>
                 </Button>
                 <Separator/>
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
                 <StackPanel VerticalAlignment="Center">
-                    <RadioButton Content="Черный" IsChecked="True"/>
-                    <RadioButton Content="Красный"/>
+                    <RadioButton Content="Черный" IsChecked="True" Click="RadioButton_Click"/>
+                    <RadioButton Content="Красный" Click="RadioButton_Click_1"/>
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
